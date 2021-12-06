@@ -59,7 +59,7 @@ public class FakeData {
     public static String generatePassword() {
         Faker faker = new Faker();
 
-        String password = faker.numerify("Vasdu##a###c#aer###wb#c#");
+        String password = faker.numerify("Apo##UyJK##c#aer###wb#c#");
         return password;
     }
     public static String generatePurchaserID(){

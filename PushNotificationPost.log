@@ -1,0 +1,65 @@
+Request method:	POST
+Request URI:	https://twg.azure-api.net/twlYourWarehouseTest/RegisterCustomer.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2
+				X-TWL-API-Version=3.7
+				X-TWL-Token=eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTXpRc0ltbGhkQ0k2TVRZek9EYzBPRGt6TkN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2ZEhKMVpTeGNJblpwYzJsMFgybGtYQ0k2WENKa1ptTTFZVEU0WmpjNFptWmtNRE0xWW1VM1lXWTJNamN6Wmx3aWZYMGlmUS5kbDhYZ2xkQVZvOFNHUkRyclNBZG5iRF90blJuZll3SXJvaGpoc1BXNzhKZ1RpZjJrdWtRcW5CNzRSZ0tIUng2VTVDVEJlZThrdFRWd3FubXRndVJUX1FQVlRLaXhuMzZ0X2VNVHBBYlJ4c01aclVJUnJrVGRSTDlFZ2prVlNuajJ3enVBckVJOThZVVVBZUVPUXgyLTVRSVp4WkQ5VTF4Z09FYkN5V1VUaVZMZElORC1DUG96bmFVS2ROZkZlYW9FeFN2eGZQTk9NYWtVSzYtMmVtVG5iRjdsTk9XLWdmV0tlR1ZZcHM5MXY5NlkyTnBHX21PWF9nT21ZbV9tN2hKekt1WTR6VTkwU0djLUdZa2JCS2ZSUEszR3RoVHIwTE5YVnNrbnlkaXJwc1pESTFobEJqckN4Tno2ODktb2d1bENUNi1GVUp5bko3dG8tNHBCTUQ5VXF1TVpuTjBPZlNuU1NjeVVOXzZGeE0xT3hFTzRxb0wtWlZWLW1zQURkS3E2aDBvQk1FQ1BLaF9rcDkwdXh5X2RrXzJ5RWpudldWMXFjUFRvbDV4Sy04R2liVFc5RnRWQnA4UGF3dC1Eb3ZfRXNCUTloXzd2bUp0THJUUjJfUHZlOUtUeUZYUDZ1MjlwdUlmMXlfU2VaQjRoUm9sMnBRbjJQY0ZBVW5zbF9WOGVUQ3ZuU2ppeFlzdE1ILTFPQ0N2UDQxZVpWQXpOSm9jVTdwOXJfbmd4UEI0SWdBNW1uWi1QM2t4LWJsQnJOa2IiLCJiYXNrZXRfaWQiOiIiLCJvcmRlcl9pZCI6IiIsInZlciI6MX0=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Agustina",
+    "lastName": "Osinski",
+    "email": "daron.conn@gmail.com",
+    "password": "Vasdu05a586c1aer714wb6c7",
+    "firebaseToken": "dqwe32",
+    "homePhone": {
+        "Prefix": "388",
+        "Number": "523"
+    },
+    "preferredBranchIds": [
+        "04"
+    ]
+}
+HTTP/1.1 200 OK
+Content-Length: 1733
+Content-Type: application/json; charset=utf-8
+Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641
+X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTXpVc0ltbGhkQ0k2TVRZek9EYzBPRGt6TlN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aU9HTXpaV05tTTJWaVlqRTRZelk1WXpNeVptTmxPVGhqTWpOY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVF9RUFZUS2l4bjM2dF9lTVRwQWJSeHNjYWpINmZ2NlpGOVRrT2VXTlBlN3pVbFMyVkhRS01YcUF4RlM3NVRKeE41UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxDVDYtRlVKeW5KN3RvLTRwQk1EOVVxdU1abk4wT2ZTblNTY3lVTl82RnhNMU94RU80cW9MLVpWVi1tc0FEZEtxM0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTkFXRnZkQ2wwSmFBTmh6eTA1bzVYdklfRTBCRThxMXM4WXEwalNoVUpwSVVyNXdVRmVTTHlkOWZ3OXVaT0thYmswb2Q3cjM1SlhmRTc1S29UMTlyTl9ZeFRlT0hIdTQ4eEVoNEtCRU9ibFZ1MUtXSTBLdzdycVQ1eUNfaGY3aUszNmFQNi1Hc3pVTDFtZFdCUkN1cU5XIiwiYmFza2V0X2lkIjoiIiwib3JkZXJfaWQiOiIiLCJwcyI6IjZhYzg4NTQyZTg0NjQ2OTY4ZWI5NzE0YWMzMDUzYTE0IiwibHQiOjE2Mzg3NDg5MzUsInZlciI6Mn0=
+X-TWL-Token-Expires: 2021-12-06T00:32:15Z
+X-TWL-Token-Expiry-Minutes: 29
+X-TWL-Token-Version: 2
+X-Powered-By: ASP.NET
+Date: Mon, 06 Dec 2021 00:02:16 GMT
+
+{
+    "customerId": "deQybVazdo7YIduwbKOJce1uGO",
+    "firstName": "Agustina",
+    "lastName": "Osinski",
+    "email": "daron.conn@gmail.com",
+    "dmpUid": "01253e5c31683d6de968251331116aea0966048f51c6d5c9232e340deccc4726",
+    "salesforceCustomerId": "",
+    "demandwareCustomerNo": "00981560",
+    "dynamicYieldIdentity": "23af616d0aa6085af250464a21b9e5f4d16dafbe9022b0f1fb182398ddf63603",
+    "preferredBranchIds": [
+        "04",
+        "197"
+    ],
+    "eReceiptsPreferred": false,
+    "lastAppLoginDateTime": "2021-12-06T13:02:15",
+    "token": "{\"jwt\":\"Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzg3NTA3MzUsImlhdCI6MTYzODc0ODkzNSwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiZGVReWJWYXpkbzdZSWR1d2JLT0pjZTF1R09cIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiOGMzZWNmM2ViYjE4YzY5YzMyZmNlOThjMjNcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT_QPVTKixn36t_eMTpAbRxscajH6fv6ZF9TkOeWNPe7zUlS2VHQKMXqAxFS75TJxN5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulCT6-FUJynJ7to-4pBMD9UquMZnN0OfSnSScyUN_6FxM1OxEO4qoL-ZVV-msADdKq3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXNAWFvdCl0JaANhzy05o5XvI_E0BE8q1s8Yq0jShUJpIUr5wUFeSLyd9fw9uZOKabk0od7r35JXfE75KoT19rN_YxTeOHHu48xEh4KBEOblVu1KWI0Kw7rqT5yC_hf7iK36aP6-GszUL1mdWBRCuqNW\",\"basket_id\":\"\",\"order_id\":\"\",\"ps\":\"6ac88542e84646968eb9714ac3053a14\",\"lt\":1638748935,\"ver\":2}",
+    "expiresDatetime": "2021-12-06T00:32:15Z",
+    "expiryMinutes": 29,
+    "guest": false,
+    "platformDemandWare": "QAT",
+    "environment": "Azure QAT",
+    "developmentPlatform": true,
+    "apiVersion": 3.7,
+    "requestedApiVersion": 3.7
+}

@@ -1,0 +1,54 @@
+Request method:	GET
+Request URI:	https://twg.azure-api.net/twlYourWarehouseTest/login.json?Kind=A
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2
+				X-TWL-API-Version=3.7
+				X-TWL-Device=Android
+				Authorization=Basic ZGFyb24uY29ubkBnbWFpbC5jb206VmFzZHUwNWE1ODZjMWFlcjcxNHdiNmM3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Length: 1739
+Content-Type: application/json; charset=utf-8
+Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641
+X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTlRFc0ltbGhkQ0k2TVRZek9EYzBPRGsxTVN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aVpEazJaalkxWmpjMlpEUTNabUZqTlRCbE1qazVaV1k0TlRGY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVF9RUFZUS2l4bjM2dF9lTVRwQWJSeHUzRzVqUDVYeGNBcjVvZzRFbXgwa1U0VmN4Q1ZDUnlTWWoteWVXTzN0R181UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxDVDYtRlVKeW5KN3RvLTRwQk1EOVVxdU1abk4wT2ZTblNTY3lVTl82RnhNMU94RU80cW9MLVpWVi1tc0FEZEtxM0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTkNELWJjTmI4MzMtX3dNYnpMZkp5ckdlRHh6Y090anlyVEE5UjlURzZIRUVSQkRISWd3WWpoRmZ3N3RvOEVhQncwb2Q3cjM1SlhmRTc1S29UMTlyTl9ZeFRlT0hIdTQ4eEVoNEtCRU9ibFZ1MUtXSTBLdzdycVQ1eUNfaGY3aUszNmFQNi1Hc3pVTDFtZFdCUkN1cU5XIiwiYmFza2V0X2lkIjoiIiwib3JkZXJfaWQiOiIiLCJ2ZXIiOjF9
+X-TWL-Token-Expires: 2021-12-06T00:32:31Z
+X-TWL-Token-Expiry-Minutes: 29
+X-TWL-Token-Version: 1
+X-Powered-By: ASP.NET
+Date: Mon, 06 Dec 2021 00:02:30 GMT
+
+{
+    "customerId": "deQybVazdo7YIduwbKOJce1uGO",
+    "firstName": "Agustina",
+    "lastName": "Osinski",
+    "email": "daron.conn@gmail.com",
+    "gender": 0,
+    "dmpUid": "01253e5c31683d6de968251331116aea0966048f51c6d5c9232e340deccc4726",
+    "salesforceCustomerId": "0030w00000ijqX1AAI",
+    "demandwareCustomerNo": "00981560",
+    "dynamicYieldIdentity": "23af616d0aa6085af250464a21b9e5f4d16dafbe9022b0f1fb182398ddf63603",
+    "preferredBranchIds": [
+        "04",
+        "197"
+    ],
+    "loyaltySegmentId": "GivebackAndOffers",
+    "eReceiptsPreferred": false,
+    "lastAppLoginDateTime": "2021-12-06T13:02:31",
+    "token": "{\"jwt\":\"Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzg3NTA3NTEsImlhdCI6MTYzODc0ODk1MSwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiZGVReWJWYXpkbzdZSWR1d2JLT0pjZTF1R09cIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiZDk2ZjY1Zjc2ZDQ3ZmFjNTBlMjk5ZWY4NTFcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT_QPVTKixn36t_eMTpAbRxu3G5jP5XxcAr5og4Emx0kU4VcxCVCRySYj-yeWO3tG_5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulCT6-FUJynJ7to-4pBMD9UquMZnN0OfSnSScyUN_6FxM1OxEO4qoL-ZVV-msADdKq3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXNCD-bcNb833-_wMbzLfJyrGeDxzcOtjyrTA9R9TG6HEERBDHIgwYjhFfw7to8EaBw0od7r35JXfE75KoT19rN_YxTeOHHu48xEh4KBEOblVu1KWI0Kw7rqT5yC_hf7iK36aP6-GszUL1mdWBRCuqNW\",\"basket_id\":\"\",\"order_id\":\"\",\"ver\":1}",
+    "expiresDatetime": "2021-12-06T00:32:31Z",
+    "expiryMinutes": 29,
+    "guest": false,
+    "platformDemandWare": "QAT",
+    "environment": "Azure QAT",
+    "developmentPlatform": true,
+    "apiVersion": 3.7,
+    "requestedApiVersion": 3.7
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Register Customer</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+        > Register Customer
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 06-12-2021 13:02</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                        <span class="story-header-title">Login Red App</span>
+                                    </h3>
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Register Customer
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+</div>
+</div>
+
+<div class="clr"></div>
+
+
+<div id="beforetable"></div>
+
+
+<div id="tablecontents">
+    <div>
+        <table class="step-table">
+            <tr class="step-titles">
+                <th width="65">
+                </th>
+                <th class="step-description-column greentext">
+                    Steps
+                </th>
+
+                <th width="130" class="greentext">Outcome</th>
+                <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
+            </tr>
+            <tr class="step-table-separator">
+                <td colspan="5"></td>
+            </tr>
+
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="0"></a>
+                            <span style="margin-left: 20px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="top-level-step">
+                                                Given I Login to Red App
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">264ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="1"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                And I register a customer with no preferred store
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">18s 709ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="1-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                GET https://twg.azure-api.net/twlYourWarehouseTest/login.json?Kind=A
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-3">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://twg.azure-api.net/twlYourWarehouseTest/login.json?Kind=A</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Authorization=Guest<br>Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2<br>X-TWL-API-Version=3.7<br>X-TWL-Device=Android<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre></pre>
+                                    <h4>Request Cookies</h4>
+                                    <pre></pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Content-Length: 1313<br>Content-Type: application/json; charset=utf-8<br>Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641<br>X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTXpRc0ltbGhkQ0k2TVRZek9EYzBPRGt6TkN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2ZEhKMVpTeGNJblpwYzJsMFgybGtYQ0k2WENKa1ptTTFZVEU0WmpjNFptWmtNRE0xWW1VM1lXWTJNamN6Wmx3aWZYMGlmUS5kbDhYZ2xkQVZvOFNHUkRyclNBZG5iRF90blJuZll3SXJvaGpoc1BXNzhKZ1RpZjJrdWtRcW5CNzRSZ0tIUng2VTVDVEJlZThrdFRWd3FubXRndVJUX1FQVlRLaXhuMzZ0X2VNVHBBYlJ4c01aclVJUnJrVGRSTDlFZ2prVlNuajJ3enVBckVJOThZVVVBZUVPUXgyLTVRSVp4WkQ5VTF4Z09FYkN5V1VUaVZMZElORC1DUG96bmFVS2ROZkZlYW9FeFN2eGZQTk9NYWtVSzYtMmVtVG5iRjdsTk9XLWdmV0tlR1ZZcHM5MXY5NlkyTnBHX21PWF9nT21ZbV9tN2hKekt1WTR6VTkwU0djLUdZa2JCS2ZSUEszR3RoVHIwTE5YVnNrbnlkaXJwc1pESTFobEJqckN4Tno2ODktb2d1bENUNi1GVUp5bko3dG8tNHBCTUQ5VXF1TVpuTjBPZlNuU1NjeVVOXzZGeE0xT3hFTzRxb0wtWlZWLW1zQURkS3E2aDBvQk1FQ1BLaF9rcDkwdXh5X2RrXzJ5RWpudldWMXFjUFRvbDV4Sy04R2liVFc5RnRWQnA4UGF3dC1Eb3ZfRXNCUTloXzd2bUp0THJUUjJfUHZlOUtUeUZYUDZ1MjlwdUlmMXlfU2VaQjRoUm9sMnBRbjJQY0ZBVW5zbF9WOGVUQ3ZuU2ppeFlzdE1ILTFPQ0N2UDQxZVpWQXpOSm9jVTdwOXJfbmd4UEI0SWdBNW1uWi1QM2t4LWJsQnJOa2IiLCJiYXNrZXRfaWQiOiIiLCJvcmRlcl9pZCI6IiIsInZlciI6MX0=<br>X-TWL-Token-Expires: 2021-12-06T00:32:14Z<br>X-TWL-Token-Expiry-Minutes: 29<br>X-TWL-Token-Version: 1<br>X-Powered-By: ASP.NET<br>Date: Mon, 06 Dec 2021 00:02:13 GMT</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;customerId&quot;: &quot;deQybVazdo7YIduwbKOJce1uGO&quot;,<br>    &quot;preferredBranchIds&quot;: [<br>        <br>    ],<br>    &quot;eReceiptsPreferred&quot;: false,<br>    &quot;token&quot;: &quot;{\&quot;jwt\&quot;:\&quot;Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzg3NTA3MzQsImlhdCI6MTYzODc0ODkzNCwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiZGVReWJWYXpkbzdZSWR1d2JLT0pjZTF1R09cIixcImd1ZXN0XCI6dHJ1ZSxcInZpc2l0X2lkXCI6XCJkZmM1YTE4Zjc4ZmZkMDM1YmU3YWY2MjczZlwifX0ifQ.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT_QPVTKixn36t_eMTpAbRxsMZrUIRrkTdRL9EgjkVSnj2wzuArEI98YUUAeEOQx2-5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulCT6-FUJynJ7to-4pBMD9UquMZnN0OfSnSScyUN_6FxM1OxEO4qoL-ZVV-msADdKq6h0oBMECPKh_kp90uxy_dk_2yEjnvWV1qcPTol5xK-8GibTW9FtVBp8Pawt-Dov_EsBQ9h_7vmJtLrTR2_Pve9KTyFXP6u29puIf1y_SeZB4hRol2pQn2PcFAUnsl_V8eTCvnSjixYstMH-1OCCvP41eZVAzNJocU7p9r_ngxPB4IgA5mnZ-P3kx-blBrNkb\&quot;,\&quot;basket_id\&quot;:\&quot;\&quot;,\&quot;order_id\&quot;:\&quot;\&quot;,\&quot;ver\&quot;:1}&quot;,<br>    &quot;expiresDatetime&quot;: &quot;2021-12-06T00:32:14Z&quot;,<br>    &quot;expiryMinutes&quot;: 29,<br>    &quot;guest&quot;: true,<br>    &quot;platformDemandWare&quot;: &quot;QAT&quot;,<br>    &quot;environment&quot;: &quot;Azure QAT&quot;,<br>    &quot;developmentPlatform&quot;: true,<br>    &quot;apiVersion&quot;: 3.7,<br>    &quot;requestedApiVersion&quot;: 3.7<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="1-1"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://twg.azure-api.net/twlYourWarehouseTest/RegisterCustomer.json
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-4">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://twg.azure-api.net/twlYourWarehouseTest/RegisterCustomer.json</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2<br>X-TWL-API-Version=3.7<br>X-TWL-Token=eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTXpRc0ltbGhkQ0k2TVRZek9EYzBPRGt6TkN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2ZEhKMVpTeGNJblpwYzJsMFgybGtYQ0k2WENKa1ptTTFZVEU0WmpjNFptWmtNRE0xWW1VM1lXWTJNamN6Wmx3aWZYMGlmUS5kbDhYZ2xkQVZvOFNHUkRyclNBZG5iRF90blJuZll3SXJvaGpoc1BXNzhKZ1RpZjJrdWtRcW5CNzRSZ0tIUng2VTVDVEJlZThrdFRWd3FubXRndVJUX1FQVlRLaXhuMzZ0X2VNVHBBYlJ4c01aclVJUnJrVGRSTDlFZ2prVlNuajJ3enVBckVJOThZVVVBZUVPUXgyLTVRSVp4WkQ5VTF4Z09FYkN5V1VUaVZMZElORC1DUG96bmFVS2ROZkZlYW9FeFN2eGZQTk9NYWtVSzYtMmVtVG5iRjdsTk9XLWdmV0tlR1ZZcHM5MXY5NlkyTnBHX21PWF9nT21ZbV9tN2hKekt1WTR6VTkwU0djLUdZa2JCS2ZSUEszR3RoVHIwTE5YVnNrbnlkaXJwc1pESTFobEJqckN4Tno2ODktb2d1bENUNi1GVUp5bko3dG8tNHBCTUQ5VXF1TVpuTjBPZlNuU1NjeVVOXzZGeE0xT3hFTzRxb0wtWlZWLW1zQURkS3E2aDBvQk1FQ1BLaF9rcDkwdXh5X2RrXzJ5RWpudldWMXFjUFRvbDV4Sy04R2liVFc5RnRWQnA4UGF3dC1Eb3ZfRXNCUTloXzd2bUp0THJUUjJfUHZlOUtUeUZYUDZ1MjlwdUlmMXlfU2VaQjRoUm9sMnBRbjJQY0ZBVW5zbF9WOGVUQ3ZuU2ppeFlzdE1ILTFPQ0N2UDQxZVpWQXpOSm9jVTdwOXJfbmd4UEI0SWdBNW1uWi1QM2t4LWJsQnJOa2IiLCJiYXNrZXRfaWQiOiIiLCJvcmRlcl9pZCI6IiIsInZlciI6MX0=<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;firstName&quot;: &quot;Agustina&quot;,<br>    &quot;lastName&quot;: &quot;Osinski&quot;,<br>    &quot;email&quot;: &quot;daron.conn@gmail.com&quot;,<br>    &quot;password&quot;: &quot;Vasdu05a586c1aer714wb6c7&quot;,<br>    &quot;firebaseToken&quot;: &quot;dqwe32&quot;,<br>    &quot;homePhone&quot;: {<br>        &quot;Prefix&quot;: &quot;388&quot;,<br>        &quot;Number&quot;: &quot;523&quot;<br>    },<br>    &quot;preferredBranchIds&quot;: [<br>        &quot;04&quot;<br>    ]<br>}</pre>
+                                    <h4>Request Cookies</h4>
+                                    <pre></pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Content-Length: 1733<br>Content-Type: application/json; charset=utf-8<br>Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641<br>X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTXpVc0ltbGhkQ0k2TVRZek9EYzBPRGt6TlN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aU9HTXpaV05tTTJWaVlqRTRZelk1WXpNeVptTmxPVGhqTWpOY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVF9RUFZUS2l4bjM2dF9lTVRwQWJSeHNjYWpINmZ2NlpGOVRrT2VXTlBlN3pVbFMyVkhRS01YcUF4RlM3NVRKeE41UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxDVDYtRlVKeW5KN3RvLTRwQk1EOVVxdU1abk4wT2ZTblNTY3lVTl82RnhNMU94RU80cW9MLVpWVi1tc0FEZEtxM0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTkFXRnZkQ2wwSmFBTmh6eTA1bzVYdklfRTBCRThxMXM4WXEwalNoVUpwSVVyNXdVRmVTTHlkOWZ3OXVaT0thYmswb2Q3cjM1SlhmRTc1S29UMTlyTl9ZeFRlT0hIdTQ4eEVoNEtCRU9ibFZ1MUtXSTBLdzdycVQ1eUNfaGY3aUszNmFQNi1Hc3pVTDFtZFdCUkN1cU5XIiwiYmFza2V0X2lkIjoiIiwib3JkZXJfaWQiOiIiLCJwcyI6IjZhYzg4NTQyZTg0NjQ2OTY4ZWI5NzE0YWMzMDUzYTE0IiwibHQiOjE2Mzg3NDg5MzUsInZlciI6Mn0=<br>X-TWL-Token-Expires: 2021-12-06T00:32:15Z<br>X-TWL-Token-Expiry-Minutes: 29<br>X-TWL-Token-Version: 2<br>X-Powered-By: ASP.NET<br>Date: Mon, 06 Dec 2021 00:02:16 GMT</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;customerId&quot;: &quot;deQybVazdo7YIduwbKOJce1uGO&quot;,<br>    &quot;firstName&quot;: &quot;Agustina&quot;,<br>    &quot;lastName&quot;: &quot;Osinski&quot;,<br>    &quot;email&quot;: &quot;daron.conn@gmail.com&quot;,<br>    &quot;dmpUid&quot;: &quot;01253e5c31683d6de968251331116aea0966048f51c6d5c9232e340deccc4726&quot;,<br>    &quot;salesforceCustomerId&quot;: &quot;&quot;,<br>    &quot;demandwareCustomerNo&quot;: &quot;00981560&quot;,<br>    &quot;dynamicYieldIdentity&quot;: &quot;23af616d0aa6085af250464a21b9e5f4d16dafbe9022b0f1fb182398ddf63603&quot;,<br>    &quot;preferredBranchIds&quot;: [<br>        &quot;04&quot;,<br>        &quot;197&quot;<br>    ],<br>    &quot;eReceiptsPreferred&quot;: false,<br>    &quot;lastAppLoginDateTime&quot;: &quot;2021-12-06T13:02:15&quot;,<br>    &quot;token&quot;: &quot;{\&quot;jwt\&quot;:\&quot;Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzg3NTA3MzUsImlhdCI6MTYzODc0ODkzNSwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiZGVReWJWYXpkbzdZSWR1d2JLT0pjZTF1R09cIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiOGMzZWNmM2ViYjE4YzY5YzMyZmNlOThjMjNcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT_QPVTKixn36t_eMTpAbRxscajH6fv6ZF9TkOeWNPe7zUlS2VHQKMXqAxFS75TJxN5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulCT6-FUJynJ7to-4pBMD9UquMZnN0OfSnSScyUN_6FxM1OxEO4qoL-ZVV-msADdKq3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXNAWFvdCl0JaANhzy05o5XvI_E0BE8q1s8Yq0jShUJpIUr5wUFeSLyd9fw9uZOKabk0od7r35JXfE75KoT19rN_YxTeOHHu48xEh4KBEOblVu1KWI0Kw7rqT5yC_hf7iK36aP6-GszUL1mdWBRCuqNW\&quot;,\&quot;basket_id\&quot;:\&quot;\&quot;,\&quot;order_id\&quot;:\&quot;\&quot;,\&quot;ps\&quot;:\&quot;6ac88542e84646968eb9714ac3053a14\&quot;,\&quot;lt\&quot;:1638748935,\&quot;ver\&quot;:2}&quot;,<br>    &quot;expiresDatetime&quot;: &quot;2021-12-06T00:32:15Z&quot;,<br>    &quot;expiryMinutes&quot;: 29,<br>    &quot;guest&quot;: false,<br>    &quot;platformDemandWare&quot;: &quot;QAT&quot;,<br>    &quot;environment&quot;: &quot;Azure QAT&quot;,<br>    &quot;developmentPlatform&quot;: true,<br>    &quot;apiVersion&quot;: 3.7,<br>    &quot;requestedApiVersion&quot;: 3.7<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="2"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                Then I see the customer details
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">809ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection2" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="2-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                GET https://twg.azure-api.net/twlYourWarehouseTest/login.json?Kind=A
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-6">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://twg.azure-api.net/twlYourWarehouseTest/login.json?Kind=A</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2<br>X-TWL-API-Version=3.7<br>X-TWL-Device=Android<br>Authorization=Basic ZGFyb24uY29ubkBnbWFpbC5jb206VmFzZHUwNWE1ODZjMWFlcjcxNHdiNmM3<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre></pre>
+                                    <h4>Request Cookies</h4>
+                                    <pre></pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Content-Length: 1739<br>Content-Type: application/json; charset=utf-8<br>Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641<br>X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16ZzNOVEEzTlRFc0ltbGhkQ0k2TVRZek9EYzBPRGsxTVN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2laR1ZSZVdKV1lYcGtiemRaU1dSMWQySkxUMHBqWlRGMVIwOWNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aVpEazJaalkxWmpjMlpEUTNabUZqTlRCbE1qazVaV1k0TlRGY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVF9RUFZUS2l4bjM2dF9lTVRwQWJSeHUzRzVqUDVYeGNBcjVvZzRFbXgwa1U0VmN4Q1ZDUnlTWWoteWVXTzN0R181UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxDVDYtRlVKeW5KN3RvLTRwQk1EOVVxdU1abk4wT2ZTblNTY3lVTl82RnhNMU94RU80cW9MLVpWVi1tc0FEZEtxM0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTkNELWJjTmI4MzMtX3dNYnpMZkp5ckdlRHh6Y090anlyVEE5UjlURzZIRUVSQkRISWd3WWpoRmZ3N3RvOEVhQncwb2Q3cjM1SlhmRTc1S29UMTlyTl9ZeFRlT0hIdTQ4eEVoNEtCRU9ibFZ1MUtXSTBLdzdycVQ1eUNfaGY3aUszNmFQNi1Hc3pVTDFtZFdCUkN1cU5XIiwiYmFza2V0X2lkIjoiIiwib3JkZXJfaWQiOiIiLCJ2ZXIiOjF9<br>X-TWL-Token-Expires: 2021-12-06T00:32:31Z<br>X-TWL-Token-Expiry-Minutes: 29<br>X-TWL-Token-Version: 1<br>X-Powered-By: ASP.NET<br>Date: Mon, 06 Dec 2021 00:02:30 GMT</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;customerId&quot;: &quot;deQybVazdo7YIduwbKOJce1uGO&quot;,<br>    &quot;firstName&quot;: &quot;Agustina&quot;,<br>    &quot;lastName&quot;: &quot;Osinski&quot;,<br>    &quot;email&quot;: &quot;daron.conn@gmail.com&quot;,<br>    &quot;gender&quot;: 0,<br>    &quot;dmpUid&quot;: &quot;01253e5c31683d6de968251331116aea0966048f51c6d5c9232e340deccc4726&quot;,<br>    &quot;salesforceCustomerId&quot;: &quot;0030w00000ijqX1AAI&quot;,<br>    &quot;demandwareCustomerNo&quot;: &quot;00981560&quot;,<br>    &quot;dynamicYieldIdentity&quot;: &quot;23af616d0aa6085af250464a21b9e5f4d16dafbe9022b0f1fb182398ddf63603&quot;,<br>    &quot;preferredBranchIds&quot;: [<br>        &quot;04&quot;,<br>        &quot;197&quot;<br>    ],<br>    &quot;loyaltySegmentId&quot;: &quot;GivebackAndOffers&quot;,<br>    &quot;eReceiptsPreferred&quot;: false,<br>    &quot;lastAppLoginDateTime&quot;: &quot;2021-12-06T13:02:31&quot;,<br>    &quot;token&quot;: &quot;{\&quot;jwt\&quot;:\&quot;Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzg3NTA3NTEsImlhdCI6MTYzODc0ODk1MSwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiZGVReWJWYXpkbzdZSWR1d2JLT0pjZTF1R09cIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiZDk2ZjY1Zjc2ZDQ3ZmFjNTBlMjk5ZWY4NTFcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT_QPVTKixn36t_eMTpAbRxu3G5jP5XxcAr5og4Emx0kU4VcxCVCRySYj-yeWO3tG_5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulCT6-FUJynJ7to-4pBMD9UquMZnN0OfSnSScyUN_6FxM1OxEO4qoL-ZVV-msADdKq3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXNCD-bcNb833-_wMbzLfJyrGeDxzcOtjyrTA9R9TG6HEERBDHIgwYjhFfw7to8EaBw0od7r35JXfE75KoT19rN_YxTeOHHu48xEh4KBEOblVu1KWI0Kw7rqT5yC_hf7iK36aP6-GszUL1mdWBRCuqNW\&quot;,\&quot;basket_id\&quot;:\&quot;\&quot;,\&quot;order_id\&quot;:\&quot;\&quot;,\&quot;ver\&quot;:1}&quot;,<br>    &quot;expiresDatetime&quot;: &quot;2021-12-06T00:32:31Z&quot;,<br>    &quot;expiryMinutes&quot;: 29,<br>    &quot;guest&quot;: false,<br>    &quot;platformDemandWare&quot;: &quot;QAT&quot;,<br>    &quot;environment&quot;: &quot;Azure QAT&quot;,<br>    &quot;developmentPlatform&quot;: true,<br>    &quot;apiVersion&quot;: 3.7,<br>    &quot;requestedApiVersion&quot;: 3.7<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="3"></a>
+                            <span style="margin-left: 20px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="top-level-step">
+                                                And I see the salesforce id in Database
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1s 163ms</span></td>
+                </tr>
+            <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>21.02s</em></span></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="beforefooter"></div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.0.1</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var imgsrc = $(".img" + divId).attr('src');
+        if (imgsrc == 'images/plus.png') {
+            $(".img" + divId).attr("src", function () {
+                return "images/minus.png";
+            });
+
+        } else {
+            $(".img" + divId).attr("src", function () {
+                return "images/plus.png";
+            });
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(document).ready(function () {
+        $('img.screenshot').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    });
+
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>

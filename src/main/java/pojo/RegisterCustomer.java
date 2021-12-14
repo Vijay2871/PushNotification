@@ -32,5 +32,4 @@ public class RegisterCustomer {
     @JsonProperty("preferredBranchIds")
     private List<String> preferredBranchIds = null;
 
-
 }

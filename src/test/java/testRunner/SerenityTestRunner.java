@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = {"src/test/java/features/LoginApp.feature"},
+        features = {"src/test/java/features/LoyaltySignUp.feature"},
         glue = {"/steps"},
         publish = true)
 

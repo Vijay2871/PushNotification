@@ -1,0 +1,26 @@
+Request method:	POST
+Request URI:	https://twg.azure-api.net/test/payments/loyalty/pushnotification/v1/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Ocp-Apim-Subscription-Key=76eb5e0fabe34d93a44c17edd7923493
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "",
+    "firebaseToken": "70"
+}
+HTTP/1.1 400 Bad Request
+Content-Length: 113
+Content-Type: application/json
+Date: Mon, 13 Dec 2021 22:17:13 GMT
+
+{
+    "errorCode": 400,
+    "errorMessage": "Validation error: Invalid email, expected format is janedoe@thewarehouse.co.nz"
+}

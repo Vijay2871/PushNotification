@@ -1,0 +1,37 @@
+Request method:	POST
+Request URI:	https://test-api.twg.co.nz/loyalty-v1/loyalty/accounts/loyalty-v1/loyalty/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-api-key=tKySF1qrPUt768FCuQ2N7dZV8OqoQoXdDTsFoWb0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "customerId": "0039D00000EfA8UQAV",
+    "brand": "twl",
+    "friendlyName": "ChesterDavis",
+    "firstName": "Augustine",
+    "lastName": "Walter",
+    "email": "shawn.runte@hotmail.com"
+}
+HTTP/1.1 403 Forbidden
+Date: Mon, 13 Dec 2021 22:54:00 GMT
+Content-Type: application/json
+Content-Length: 42
+Connection: keep-alive
+x-amzn-RequestId: d9b6bd68-5d23-4206-aaab-4a211b8ab674
+x-amzn-ErrorType: MissingAuthenticationTokenException
+x-amz-apigw-id: KT1JTGShSwMFV4Q=
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 6bd2c5919b86fb80-AKL
+
+{
+    "message": "Missing Authentication Token"
+}

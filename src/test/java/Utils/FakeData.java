@@ -27,12 +27,22 @@ public class FakeData {
         String email= faker.internet().emailAddress();
         return email;
     }
+
+    public static String generateDuplicateEmail(){
+        Faker faker=new Faker();
+        String email= "vijayb@gmail.com";
+        return email;
+    }
     public static String generatePersonalMessage() {
         Faker faker = new Faker();
         String permessage = faker.lorem().sentence(7);
         return permessage;
     }
-
+    public static String generateBrand() {
+        Faker faker = new Faker();
+        String brand = "twl";
+        return brand;
+    }
     public static String generateName() {
         Faker faker = new Faker();
         String fname = faker.name().firstName();
@@ -59,9 +69,16 @@ public class FakeData {
     public static String generatePassword() {
         Faker faker = new Faker();
 
-        String password = faker.numerify("Vasdu##a###c#aer###wb#c#");
+        String password = faker.numerify("ldkb#lnd#lkd#jt###ffr####");
         return password;
     }
+    public static String generateStatus() {
+        Faker faker = new Faker();
+
+        String status = "New";
+        return status;
+    }
+
     public static String generatePurchaserID(){
 
         Random random = new Random();

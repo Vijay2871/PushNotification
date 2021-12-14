@@ -1,0 +1,27 @@
+Request method:	POST
+Request URI:	https://twg.azure-api.net/test/payments/loyalty/pushnotification/v1/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Ocp-Apim-Subscription-Key=76eb5e0fabe34d93a44c17edd7923493123A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "trenton.denesik@gmail.com",
+    "firebaseToken": "88"
+}
+HTTP/1.1 401 Access Denied
+Content-Length: 143
+Content-Type: application/json
+WWW-Authenticate: AzureApiManagementKey realm="https://twg.azure-api.net/test/payments/loyalty/pushnotification",name="Ocp-Apim-Subscription-Key",type="header"
+Date: Thu, 09 Dec 2021 21:16:25 GMT
+
+{
+    "statusCode": 401,
+    "message": "Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription."
+}

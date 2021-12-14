@@ -17,6 +17,5 @@ public class Causes {
     @JsonProperty("causeId")
     private String causeId;
 
-
 }
 

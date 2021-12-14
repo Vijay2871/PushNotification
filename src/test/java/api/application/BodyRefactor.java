@@ -19,6 +19,7 @@ public class BodyRefactor {
         return PushBody.builder().email(email).firebaseToken(token).build();
 
     }
+
 public static Vcode getVocdeBuilder(String userid,String mobile){
         return Vcode.builder().userId(userid).mobileNumber(mobile).build();
 }

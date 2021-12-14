@@ -71,7 +71,7 @@ public class FakeData {
 
 
         String password = faker.numerify("ldkb#lnd#lkd#jt###ffr####");
-        
+
         return password;
     }
     public static String generateStatus() {

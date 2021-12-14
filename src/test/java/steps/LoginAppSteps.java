@@ -45,7 +45,7 @@ public class LoginAppSteps {
     public void i_register_as_a_customer() throws FileNotFoundException, InterruptedException {
 
         PushApi.post(requestRegisterCustomer, Routes.REGISTER_PUSH);
-        Thread.sleep(22000);
+        Thread.sleep(30000);
     }
 
     @Then("I can now login as a registered Red App Customer")
@@ -75,8 +75,8 @@ public class LoginAppSteps {
     }
     @Then("I can choose a cause that I like")
     public void i_can_choose_a_cause_that_i_like() {
-       //System.out.println("f");
-        //System.out.println("f");
+       System.out.println("f");
+
     }
 
 }

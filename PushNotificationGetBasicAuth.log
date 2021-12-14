@@ -8,42 +8,43 @@ Path params:	<none>
 Headers:		Ocp-Apim-Subscription-Key=7b21a30123bd422e9ace26e63886b1d2
 				X-TWL-API-Version=3.7
 				X-TWL-Device=Android
-				Authorization=Basic bGVpZ2gud2F0c2ljYUBnbWFpbC5jb206bGRrYjBsbmQ1bGtkOGp0MDU2ZmZyMDUzNA==
+				Authorization=Basic amEucnlhbkBnbWFpbC5jb206bGRrYjNsbmQxbGtkOGp0ODg5ZmZyMzkyNw==
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Content-Length: 1679
+Content-Length: 1690
 Content-Type: application/json; charset=utf-8
 Content-Encoding: gzip
 Vary: Accept-Encoding
 Request-Context: appId=cid-v1:a8d28f16-42dc-48bc-9e02-bda6a6a6c641
-X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16azBOVFF3TlRRc0ltbGhkQ0k2TVRZek9UUTFNakkxTkN3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2lZV0pSTlc5aVp6QlNiVVExZVc1SWVuTk5kbTVqYjFORlYxcGNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aVlXUXlaV0kwWkdRME0yVmxaVGN3WWprNE5EUmpPR1poT1dKY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVDZYcHFxQlhYcW56a1EyYi05eGtmR3YzR1F2OVhWUjQ2eHk2ZDV3LVJjVnBDUGJpZzktaTlCNXUxUEdORnJpX201UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxPSHBkX3RjOExFQTNuQkJwUkVaZHE5YmlNcHJ2TFk2eUdNUktubERCVWhQTE5zbmJDbTNXQ2d0VzNpODFObU9uM0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTkV6YXNTMGltUDJWZDVpLWJSY2pibTlYakNYaWFweGwzSXBMZXZVRGwtSWFKQndBaGFGcUJBZ09uc1JEOWdsSmJrUmp2MlFuUUJHN3l2cDNIVGE3UVE0b1I5UWZ2clE3eW1WT2dBbXp6enhVQzVwOWxyeHFZWkF1VUNhaEloMHJrTXhTbkdJUWlhenRGem45T1VOQzNuQ2htTWNyMDFsYk1tSzN6cWc0VTYzUSIsImJhc2tldF9pZCI6IiIsIm9yZGVyX2lkIjoiIiwidmVyIjoxfQ==
-X-TWL-Token-Expires: 2021-12-14T03:54:14Z
+X-TWL-Token: eyJqd3QiOiJCZWFyZXIgZXlKZmRpSTZJakVpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZkaUk2SWpFaUxDSmxlSEFpT2pFMk16azFNVFF5TWpnc0ltbGhkQ0k2TVRZek9UVXhNalF5T0N3aWFYTnpJam9pTldZeFpETm1Zek10TnpaaE9TMDBNMkZpTFRrM01UY3RPVGcxTldReFpUVTRObU0zSWl3aWMzVmlJam9pZTF3aVgzWmNJanBjSWpGY0lpeGNJbU4xYzNSdmJXVnlYMmx1Wm05Y0lqcDdYQ0pqZFhOMGIyMWxjbDlwWkZ3aU9sd2lZV05oYVVGUWEyeGFXbFZKWkVKUWIydE1WMFp4WTNkb2EwaGNJaXhjSW1kMVpYTjBYQ0k2Wm1Gc2MyVXNYQ0oyYVhOcGRGOXBaRndpT2x3aVpqWXpNelV6TkdNNVpqRTJZbVZtTkRNM01ETTJOVEJtT1RSY0luMTlJbjAuZGw4WGdsZEFWbzhTR1JEcnJTQWRuYkRfdG5SbmZZd0lyb2hqaHNQVzc4SmdUaWYya3VrUXFuQjc0UmdLSFJ4NlU1Q1RCZWU4a3RUVndxbm10Z3VSVDZkTmhFNmFZeE1zTWlvNFRMVWk2a0NRRFFGLVRaOF9OWlN0NWZzbFJEeXhRT3h2U094ak55UFZWRFBVRnRQUnQ1UUlaeFpEOVUxeGdPRWJDeVdVVGlWTGRJTkQtQ1Bvem5hVUtkTmZGZWFvRXhTdnhmUE5PTWFrVUs2LTJlbVRuYkY3bE5PVy1nZldLZUdWWXBzOTF2OTZZMk5wR19tT1hfZ09tWW1fbTdoSnpLdVk0elU5MFNHYy1HWWtiQktmUlBLM0d0aFRyMExOWFZza255ZGlycHNaREkxaGxCanJDeE56Njg5LW9ndWxkZ1dLUTBibVhjRHFyNjU0b1VHSmNhV1AxaHFwQ3JrbTBja0JaNV9Pd1VVOUN2OTZ2NzROYUJTMTROUGZOYnN4M0FLeENBMVRoa2tTcV82T3NYcm9MZjdkSXN0Q1NqOGJiZS1QT0dNNmJYTzRfXzEzZFA4WFdlbHd6NmZ6U0dIWXJyQ2hOazlBcWdsZVdGUk1admpLc0t2SGU5Y0RGYmFIdUdUQ0JZUEJqTDRBQmpkVGdPR2FzeDZWWjFJVlI3RmVuNV9JOVpLMHktaGtwNnBqNnlzUWdGS2pmQlZoTExIRGc1aTI5QWs2ODBKaGRMWVpIVXJWTlR4RzRuMldwcFdHIiwiYmFza2V0X2lkIjoiIiwib3JkZXJfaWQiOiIiLCJ2ZXIiOjF9
+X-TWL-Token-Expires: 2021-12-14T20:37:08Z
 X-TWL-Token-Expiry-Minutes: 29
 X-TWL-Token-Version: 1
 X-Powered-By: ASP.NET
-Date: Tue, 14 Dec 2021 03:24:14 GMT
+Date: Tue, 14 Dec 2021 20:07:09 GMT
 
 {
-    "customerId": "abQ5obg0RmD5ynHzsMvncoSEWZ",
-    "firstName": "Delinda",
-    "lastName": "Dietrich",
-    "email": "leigh.watsica@gmail.com",
-    "dmpUid": "3ee84d97dd1137c78ab5bd4d5d57cd7ddfad4677079b6d1cc718f0cfc6e31b68",
-    "salesforceCustomerId": "",
-    "demandwareCustomerNo": "00982719",
-    "dynamicYieldIdentity": "242e9e30b0fc0dacb3185628a81eff411bb05e8494badfa89787ff1a95634e9a",
+    "customerId": "acaiAPklZZUIdBPokLWFqcwhkH",
+    "firstName": "Sterling",
+    "lastName": "Leuschke",
+    "email": "ja.ryan@gmail.com",
+    "gender": 0,
+    "dmpUid": "bb8acd9f3818f0b46672cd23538169fde8a8cb9cad42e4115466d93003750e6e",
+    "salesforceCustomerId": "0039D00000EfIdkQAF",
+    "demandwareCustomerNo": "00982749",
+    "dynamicYieldIdentity": "dcf550b6e9ae75317268c08253b9ca0d554c931d2c5e5bf0c0faca0a948905ed",
     "preferredBranchIds": [
-        "03",
+        "93",
         "197"
     ],
     "eReceiptsPreferred": false,
-    "lastAppLoginDateTime": "2021-12-14T16:24:14",
-    "token": "{\"jwt\":\"Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzk0NTQwNTQsImlhdCI6MTYzOTQ1MjI1NCwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiYWJRNW9iZzBSbUQ1eW5IenNNdm5jb1NFV1pcIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiYWQyZWI0ZGQ0M2VlZTcwYjk4NDRjOGZhOWJcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT6XpqqBXXqnzkQ2b-9xkfGv3GQv9XVR46xy6d5w-RcVpCPbig9-i9B5u1PGNFri_m5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-ogulOHpd_tc8LEA3nBBpREZdq9biMprvLY6yGMRKnlDBUhPLNsnbCm3WCgtW3i81NmOn3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXNEzasS0imP2Vd5i-bRcjbm9XjCXiapxl3IpLevUDl-IaJBwAhaFqBAgOnsRD9glJbkRjv2QnQBG7yvp3HTa7QQ4oR9QfvrQ7ymVOgAmzzzxUC5p9lrxqYZAuUCahIh0rkMxSnGIQiaztFzn9OUNC3nChmMcr01lbMmK3zqg4U63Q\",\"basket_id\":\"\",\"order_id\":\"\",\"ver\":1}",
-    "expiresDatetime": "2021-12-14T03:54:14Z",
+    "lastAppLoginDateTime": "2021-12-15T09:07:08",
+    "token": "{\"jwt\":\"Bearer eyJfdiI6IjEiLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdiI6IjEiLCJleHAiOjE2Mzk1MTQyMjgsImlhdCI6MTYzOTUxMjQyOCwiaXNzIjoiNWYxZDNmYzMtNzZhOS00M2FiLTk3MTctOTg1NWQxZTU4NmM3Iiwic3ViIjoie1wiX3ZcIjpcIjFcIixcImN1c3RvbWVyX2luZm9cIjp7XCJjdXN0b21lcl9pZFwiOlwiYWNhaUFQa2xaWlVJZEJQb2tMV0ZxY3doa0hcIixcImd1ZXN0XCI6ZmFsc2UsXCJ2aXNpdF9pZFwiOlwiZjYzMzUzNGM5ZjE2YmVmNDM3MDM2NTBmOTRcIn19In0.dl8XgldAVo8SGRDrrSAdnbD_tnRnfYwIrohjhsPW78JgTif2kukQqnB74RgKHRx6U5CTBee8ktTVwqnmtguRT6dNhE6aYxMsMio4TLUi6kCQDQF-TZ8_NZSt5fslRDyxQOxvSOxjNyPVVDPUFtPRt5QIZxZD9U1xgOEbCyWUTiVLdIND-CPoznaUKdNfFeaoExSvxfPNOMakUK6-2emTnbF7lNOW-gfWKeGVYps91v96Y2NpG_mOX_gOmYm_m7hJzKuY4zU90SGc-GYkbBKfRPK3GthTr0LNXVsknydirpsZDI1hlBjrCxNz689-oguldgWKQ0bmXcDqr654oUGJcaWP1hqpCrkm0ckBZ5_OwUU9Cv96v74NaBS14NPfNbsx3AKxCA1ThkkSq_6OsXroLf7dIstCSj8bbe-POGM6bXO4__13dP8XWelwz6fzSGHYrrChNk9AqgleWFRMZvjKsKvHe9cDFbaHuGTCBYPBjL4ABjdTgOGasx6VZ1IVR7Fen5_I9ZK0y-hkp6pj6ysQgFKjfBVhLLHDg5i29Ak680JhdLYZHUrVNTxG4n2WppWG\",\"basket_id\":\"\",\"order_id\":\"\",\"ver\":1}",
+    "expiresDatetime": "2021-12-14T20:37:08Z",
     "expiryMinutes": 29,
     "guest": false,
     "platformDemandWare": "QAT",

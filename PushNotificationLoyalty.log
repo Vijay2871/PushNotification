@@ -12,25 +12,25 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "customerId": "",
+    "customerId": "0039D00000EfIdkQAF",
     "brand": "twl",
-    "friendlyName": "LeonardWelch",
-    "firstName": "Dirk",
-    "lastName": "Hodkiewicz",
-    "email": "leigh.watsica@gmail.com"
+    "friendlyName": "ArnoldoKub",
+    "firstName": "Jacques",
+    "lastName": "Reilly",
+    "email": "ja.ryan@gmail.com"
 }
 HTTP/1.1 403 Forbidden
-Date: Tue, 14 Dec 2021 03:24:17 GMT
+Date: Tue, 14 Dec 2021 20:07:15 GMT
 Content-Type: application/json
 Content-Length: 42
 Connection: keep-alive
-x-amzn-RequestId: 72ea2826-a9a9-4080-8c89-0303355a1657
+x-amzn-RequestId: 4c50f423-f88b-49de-82a1-71fe735e746d
 x-amzn-ErrorType: MissingAuthenticationTokenException
-x-amz-apigw-id: KUcvSE18SwMFVIA=
+x-amz-apigw-id: KWvqHENgSwMF08A=
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 6bd451810951a439-AKL
+CF-RAY: 6bda0eb28ffaee9a-AKL
 
 {
     "message": "Missing Authentication Token"

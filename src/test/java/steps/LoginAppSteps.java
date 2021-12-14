@@ -75,7 +75,7 @@ public class LoginAppSteps {
     }
     @Then("I can choose a cause that I like")
     public void i_can_choose_a_cause_that_i_like() {
-       System.out.println("f");
+       //System.out.println("f");
     }
 
 }

@@ -17,15 +17,6 @@ public class Causes {
     @JsonProperty("causeId")
     private String causeId;
 
-    @JsonProperty("causeId")
-    public String getCauseId() {
-        return causeId;
-    }
-
-    @JsonProperty("causeId")
-    public void setCauseId(String causeId) {
-        this.causeId = causeId;
-    }
 
 }
 
